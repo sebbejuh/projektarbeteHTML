@@ -253,7 +253,8 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: auto;
-    margin-top: 7%;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
   }
   .index1 {
     margin-left: 15%;
