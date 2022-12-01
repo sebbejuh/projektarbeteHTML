@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    background-color: $background-color-blue;
+    margin-bottom: 10px;
+    color: $white;
+    justify-content: space-between;
+}
+.navbar-header{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.logo{
+    width: 5%; 
+    height: auto;
+    min-width: 50px;
+}
+.brand-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: .5rem;
+    padding-left: 1rem;
+    flex-grow: 1;
+}
+.navbar-links{
+    display: none;
+    flex-grow: 2;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: $white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.hamburgerbtn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 39px;
+    height: 29px;
+    flex-grow: 1;
+}
+.hamburgerbtn .bar{
+    height: 5px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+}
+.current-page-header{
+    background-color: $current-page-color;
+    font-size: larger;
+}
+.navbar-links.active{
+    display: flex;
+}
+@media (min-width:655px){
+    .hamburgerbtn{
+        display: none;
+    }
+    .navbar-links{
+        display: flex;
+    }
+    .navbar-links li:hover{
+        background-color: $hover-color-blue;
+        text-decoration: underline;
+    }
+    .navbar-header{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar-links ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar-links li{
+        list-style: none;
+    }
+}

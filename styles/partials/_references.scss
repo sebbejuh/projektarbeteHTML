@@ -1,0 +1,86 @@
+.main-references{
+    @include flexCenterColumn ();
+}
+.references1{
+    position: relative;
+    @include flexCenterColumn ();
+    margin-left: 50px;
+    margin-right: 50px
+}
+.references1 h1{
+    margin-top: 3.5vh;
+    font-weight: 600;
+    @include h1 ();
+}
+.reference{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: $btn-red;
+    border-radius: 10px;
+    min-height: 340px;
+}
+.reference h2{
+    color: $white;
+    font-size:large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reference h2 span{
+    color: black;
+    font-size: small;
+    white-space: nowrap;
+}
+.reference p{
+    color: gold;
+    background-color:black;
+    border-radius: 5px;
+    font-size: larger;
+    padding: 0 5px 3px 5px;
+}
+.reference blockquote{
+    margin-top: 10%;
+    padding: 1px;
+    width: 75%;
+    max-width: 400px;
+    font-style: italic;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(255,255,255,0.4);
+}
+.reference blockquote::before{
+    content: '\201C';
+    font-size: 50px;
+    position: relative;
+    color: $white;
+    line-height: 0px;
+    bottom: -15px;
+    right: 10px;
+}
+.reference blockquote::after{
+    content: '\201D';
+    font-size: 50px;
+    position: relative;
+    color: $white;
+    line-height: 0px;
+    bottom: -15px;
+    right: -10px;
+}
+@media (min-width:1000px) {
+    .main-references{
+       margin-bottom: 10%;
+    }
+    .reference{
+        margin: 10% 25px auto 25px;
+    }
+    .references1 h1{
+        font-size: $h-big;
+    }
+    .references-wrapper{
+        @include flexCenterRowWrap();
+    }
+}

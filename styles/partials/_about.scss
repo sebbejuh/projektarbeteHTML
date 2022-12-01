@@ -1,0 +1,100 @@
+.main-about{
+    @include flexCenterColumn ();
+}
+.about1{
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 500px;
+}
+.about1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: $gradient-red;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.about1 h1{
+    font-size: $h-small;
+}
+.about1 h3{
+    text-align: center;
+    color: $white;
+    background: $gradient-red;
+    padding: 10px 5px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+}
+.about2{
+    position: relative;
+    flex-basis: 100%;
+    @include flexCenterColumn ();
+    margin-left: 50px;
+    margin-right: 50px
+}
+.team{
+    @include flexCenterColumn ();
+}
+.team img{
+    height: auto;
+    width: 77%;
+}
+.team ul{
+    margin-top: 0;
+    padding: 1px;
+    width: 77%;
+    list-style: none;
+
+}
+.team ul li{
+    padding-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.team ul li:first-child{
+    padding-top: 0;
+}
+.team p{
+    padding-left: 5px;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+@media (min-width:1100px) {
+    .main-about{
+       margin-bottom: auto;
+    }
+    .about1{
+        flex-basis: 40%;
+        max-width: 100%;
+    }
+    .about1 h1{
+        font-size: $h-big;
+    }
+    .about1 h3{
+        font-size: larger;
+    }
+    .about1 p{
+        font-weight: 500;
+        font-size: large;
+    }
+    .about2 h2{
+        font-size: xx-large;
+    }
+    .team-wrapper{
+        @include flexCenterRowWrap();
+    }
+    .team ul{
+        max-width: 400px;
+    }
+    .team p{
+        max-width: 400px;
+    }
+    .team img{
+        width: 75%;
+    }
+}

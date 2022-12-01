@@ -1,0 +1,132 @@
+.main-contact{
+    @include flexCenterColumn ();
+}
+.contact1{
+    position: relative;
+    @include flexCenterColumn ();
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.contact1 h1{
+    @include h1 ();
+}
+.contact-wrapper{
+    margin-top: 3%;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 10%;
+    background: $btn-red;
+    border-radius: 10px;
+}
+.contacts h2{
+    font-size: larger;
+    color: black;
+    background: $white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.contact-info img{
+    max-width: 90%;
+}
+.contacts address{
+    font-size: medium;
+    text-align: center;
+}
+.address2{
+    margin-bottom: 2%;
+}
+.address1 a{
+    text-decoration: underline;
+    color: black;
+}
+.info-wrapper{
+    @include flexCenterRowWrap();
+    background: $white;
+    padding: 0 30px;
+    border-radius: 3px;
+    margin: 20px 20px;
+}
+.info-wrapper section{
+    padding: 10px;
+}
+.info-wrapper section h3{
+    color: $white;
+    background: rgba(0,0,0,0.8);
+    padding: 3px 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+    text-align: center;
+    max-width: 80vw;
+    font-weight: 600;
+    font-size: large;
+}
+.form-textarea{
+    min-width: 90%;
+    max-width: 80vw;
+}
+.radio1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    font-weight: 600;
+    background: $white;
+    padding: 4px;
+    border-radius: 3px;
+}
+.radio1 label{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#form-text, #email{
+    font-size: large;
+}
+#form-btn{
+    text-decoration: none;
+    border: 0;
+    padding: 12px 20px;
+    color: $white;
+    background: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    margin: 10% 0 10% 0;
+}
+@media (min-width:1000px) {
+    .main-contact{
+       margin-bottom: auto;
+    }
+    .contact1 h1{
+        font-size: $h-big;
+    }
+    .contacts{
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 500px;
+        width: 40vw;
+    }
+    .contact-wrapper{
+        @include flexCenterRowWrap();
+    }
+    .form-textarea{
+        min-width: 70%;
+        
+    }
+    #form-textarea{
+        font-size: 20px;
+    }
+    .contact-info img{
+        max-width: 60%;
+    }
+    .info-wrapper{
+        margin: 44px 20px;
+    }
+}
