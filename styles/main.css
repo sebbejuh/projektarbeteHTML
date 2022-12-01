@@ -6,6 +6,7 @@ header {
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
   justify-content: space-between;
+  min-height: 80px;
 }
 
 .navbar-header {
@@ -49,11 +50,12 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 20px;
 }
 
 .hamburgerbtn {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
   display: flex;
   flex-direction: column;
@@ -72,14 +74,13 @@ header {
 
 .current-page-header {
   background-color: #145ecc;
-  font-size: larger;
 }
 
 .navbar-links.active {
   display: flex;
 }
 
-@media (min-width: 655px) {
+@media (min-width: 760px) {
   .hamburgerbtn {
     display: none;
   }
@@ -133,6 +134,7 @@ footer {
   display: flex;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
 .navbar-footer li a:hover {
@@ -156,6 +158,16 @@ footer {
   text-decoration: underline;
 }
 
+@media (min-width: 390px) {
+  .navbar-footer li a, .navbar-footer li {
+    font-size: 3.1vw;
+  }
+}
+@media (min-width: 518px) {
+  .navbar-footer li a, .navbar-footer li {
+    font-size: 15px;
+  }
+}
 .main-index {
   display: flex;
   flex-direction: column;
@@ -234,11 +246,14 @@ footer {
   max-width: 525px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .main-index {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: auto;
-    margin-top: 5%;
+    margin-top: 7%;
   }
   .index1 {
     margin-left: 15%;
@@ -345,7 +360,7 @@ footer {
   flex-direction: column;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 912px) {
   .main-products {
     margin-bottom: auto;
   }
@@ -384,8 +399,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .references1 h1 {
@@ -417,10 +432,12 @@ footer {
   margin-right: 10px;
 }
 
-.reference h2 span {
+.reference h3 {
   color: black;
   font-size: small;
   white-space: nowrap;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .reference p {
@@ -433,9 +450,8 @@ footer {
 
 .reference blockquote {
   margin-top: 10%;
-  padding: 1px;
+  max-width: 300px;
   width: 75%;
-  max-width: 400px;
   font-style: italic;
   font-size: large;
   border-radius: 10px;
@@ -450,7 +466,7 @@ footer {
   color: rgb(255, 255, 255);
   line-height: 0px;
   bottom: -15px;
-  right: 10px;
+  right: 0px;
 }
 
 .reference blockquote::after {
@@ -459,13 +475,16 @@ footer {
   position: relative;
   color: rgb(255, 255, 255);
   line-height: 0px;
-  bottom: -15px;
-  right: -10px;
+  bottom: -18px;
+  right: 5px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 912px) {
   .main-references {
     margin-bottom: 10%;
+  }
+  .reference blockquote {
+    max-width: 300px;
   }
   .reference {
     margin: 10% 25px auto 25px;
@@ -525,8 +544,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .team {
@@ -538,13 +557,13 @@ footer {
 
 .team img {
   height: auto;
-  width: 77%;
+  width: 60%;
 }
 
 .team ul {
   margin-top: 0;
   padding: 1px;
-  width: 77%;
+  width: 70%;
   list-style: none;
 }
 
@@ -560,13 +579,13 @@ footer {
 
 .team p {
   padding-left: 5px;
-  width: 100%;
+  width: 60%;
   max-width: 450px;
   margin-left: 10%;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 912px) {
   .main-about {
     margin-bottom: auto;
   }
@@ -592,15 +611,23 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .team ul {
-    max-width: 400px;
+    max-width: 300px;
   }
   .team p {
-    max-width: 400px;
+    max-width: 300px;
   }
   .team img {
-    width: 75%;
+    width: 70%;
+  }
+}
+@media (min-width: 2519px) {
+  .team img {
+    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 .main-contact {

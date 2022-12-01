@@ -4,8 +4,8 @@
 .references1{
     position: relative;
     @include flexCenterColumn ();
-    margin-left: 50px;
-    margin-right: 50px
+    margin-left: 10px;
+    margin-right: 10px
 }
 .references1 h1{
     margin-top: 3.5vh;
@@ -29,10 +29,12 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.reference h2 span{
+.reference h3{
     color: black;
     font-size: small;
     white-space: nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .reference p{
     color: gold;
@@ -43,9 +45,8 @@
 }
 .reference blockquote{
     margin-top: 10%;
-    padding: 1px;
+    max-width: 300px;
     width: 75%;
-    max-width: 400px;
     font-style: italic;
     font-size: large;
     border-radius: 10px;
@@ -59,7 +60,7 @@
     color: $white;
     line-height: 0px;
     bottom: -15px;
-    right: 10px;
+    right: 0px;
 }
 .reference blockquote::after{
     content: '\201D';
@@ -67,15 +68,19 @@
     position: relative;
     color: $white;
     line-height: 0px;
-    bottom: -15px;
-    right: -10px;
+    bottom: -18px;
+    right: 5px;
 }
-@media (min-width:1000px) {
+@media (min-width:912px) {
     .main-references{
        margin-bottom: 10%;
     }
+    .reference blockquote{
+        max-width: 300px;
+    }
     .reference{
         margin: 10% 25px auto 25px;
+        // min-height: 25vh;
     }
     .references1 h1{
         font-size: $h-big;

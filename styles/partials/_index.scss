@@ -64,11 +64,11 @@
     max-width: 525px;
 }
 
-@media (min-width:900px) {
+@media (min-width:1200px) {
     .main-index{
-       flex-direction: row;
-       margin-bottom: auto;
-       margin-top: 5%;
+        @include flexCenterRowWrap();
+        margin-bottom: auto;
+        margin-top: 7%;
     }
     .index1{
         margin-left: 15%;

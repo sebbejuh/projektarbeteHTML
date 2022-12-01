@@ -32,20 +32,20 @@
     position: relative;
     flex-basis: 100%;
     @include flexCenterColumn ();
-    margin-left: 50px;
-    margin-right: 50px
+    margin-left: 10px;
+    margin-right: 10px
 }
 .team{
     @include flexCenterColumn ();
 }
 .team img{
     height: auto;
-    width: 77%;
+    width: 60%;
 }
 .team ul{
     margin-top: 0;
     padding: 1px;
-    width: 77%;
+    width: 70%;
     list-style: none;
 
 }
@@ -59,12 +59,12 @@
 }
 .team p{
     padding-left: 5px;
-    width: 100%;
+    width: 60%;
     max-width: 450px;
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 10%;
 }
-@media (min-width:1100px) {
+@media (min-width:912px) {
     .main-about{
        margin-bottom: auto;
     }
@@ -87,14 +87,23 @@
     }
     .team-wrapper{
         @include flexCenterRowWrap();
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .team ul{
-        max-width: 400px;
+        max-width: 300px;
     }
     .team p{
-        max-width: 400px;
+        max-width: 300px;
+        // width: 40%;
     }
     .team img{
-        width: 75%;
+        width: 70%;
+    }
+}
+@media (min-width:2519px) {
+    .team img{
+        margin-right: 80px;
+        margin-left: 80px;
     }
 }

@@ -24,6 +24,7 @@ footer{
     display: flex;
     text-decoration:none;
     color: $white;
+    font-size: 15px;
 }
 .navbar-footer li a:hover{
     text-decoration: underline;
@@ -41,4 +42,14 @@ footer{
 }
 .current-page-footer{
     text-decoration: underline;
+}
+@media (min-width:390px) {
+    .navbar-footer li a, .navbar-footer li{
+        font-size: 3.1vw;
+    }
+}
+@media (min-width:518px) {
+    .navbar-footer li a, .navbar-footer li{
+        font-size: 15px;
+    }
 }
